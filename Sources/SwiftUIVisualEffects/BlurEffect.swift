@@ -4,6 +4,7 @@
 
 import SwiftUI
 
+#if canImport(UIKit)
 /// Creates a blur effect.
 public struct BlurEffect: View {
 	public init() {}
@@ -12,3 +13,4 @@ public struct BlurEffect: View {
 		_BlurVisualEffectViewRepresentable()
 	}
 }
+#endif
